@@ -16,6 +16,9 @@
             <small class="error-feedback">{{$message}}</small>
             @enderror
         </div>
-        <input class="button button-primary" type="submit" value="Submit">
+        <div class="flex gap-4">
+            <input class="button button-primary" type="submit" value="Submit">
+            <a class="button button-danger" href="{{route('posts.index')}}">Cancel</a>
+        </div>
     </form>
 </x-layouts.app>

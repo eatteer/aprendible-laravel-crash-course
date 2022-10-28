@@ -37,7 +37,7 @@
                 </a>
             @endguest
             @auth
-                <form action="{{route('logout')}}" method="POST">
+                <form action="{{route('logout.destroy')}}" method="POST">
                     @csrf
                     <input type="submit" class="button button-primary w-full" value="Logout">
                 </form>

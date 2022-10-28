@@ -49,9 +49,13 @@ Route::get('/login', function () {
     return 'Login';
 })->name('login');
 
-// REGISTER
+// LOGIN
 Route::view('/login', 'auth.login')->name('login');
-Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('login');
-Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
+Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('login.store');
+
+// LOGOUT
+Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout.destroy');
+
+// REGISTER
 Route::view('/register', 'auth.register')->name('register');
-Route::post('/register', [RegisteredUserController::class, 'store'])->name('register');
+Route::post('/register', [RegisteredUserController::class, 'store'])->name('register.store');

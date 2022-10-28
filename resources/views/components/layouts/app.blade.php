@@ -10,7 +10,7 @@
 </head>
 <body>
 <x-layouts.navigation/>
-<main class="max-w-[60ch] mx-auto w-full my-4 px-4">
+<main class="max-w-[60ch] mx-auto w-full my-4 px-4 lg:my-8">
     {{$slot}}
 </main>
 {{--<footer class="bg-white border-t border-stone-300 p-4">

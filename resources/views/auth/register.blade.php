@@ -1,6 +1,6 @@
 <x-layouts.app title="Register">
     <h1 class="title mb-4">Register</h1>
-    <form action="{{route('register')}}" method="POST" class="space-y-4">
+    <form action="{{route('register.store')}}" method="POST" class="space-y-4">
         @csrf
         <div>
             <label for="name">Name</label>
@@ -31,6 +31,6 @@
             @enderror
         </div>
         <input class="button button-primary" type="submit" value="Submit">
-        <p>Don you have an account? <a class="font-bold text-sky-700" href="{{route('login')}}">Login</a></p>
+        <p>Do you have an account? <a class="font-bold text-sky-700" href="{{route('login')}}">Login</a></p>
     </form>
 </x-layouts.app>

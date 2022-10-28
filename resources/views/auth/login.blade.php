@@ -1,6 +1,11 @@
 <x-layouts.app title="Login">
+    @if(session('userStatus'))
+        <div class="alert alert-success mb-4">
+            {{session('userStatus')}}
+        </div>
+    @endif
     <h1 class="title mb-4">Login</h1>
-    <form action="{{route('login')}}" method="POST" class="space-y-4">
+    <form action="{{route('login.store')}}" method="POST" class="space-y-4">
         @csrf
         <div>
             <label for="email">Email</label>

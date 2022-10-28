@@ -4,7 +4,6 @@
             {{session('postStatus')}}
         </div>
     @endif
-
     <div class="flex justify-between items-center mb-5">
         <h1 class="title">Last entries</h1>
         @auth
