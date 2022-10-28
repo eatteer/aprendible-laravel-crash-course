@@ -1,4 +1,6 @@
 # Aprendible Laravel Crash Course
+## Live page
+[Posts](https://sea-turtle-app-esh6g.ondigitalocean.app/posts)
 ## Screenshots
 ![Screenshot 2022-10-28 131308](https://user-images.githubusercontent.com/55556476/198704883-8b9eb657-91f9-4f4b-bc19-6fdfc99ced6f.png)
 ![Screenshot 2022-10-28 131349](https://user-images.githubusercontent.com/55556476/198704885-3d61749b-6c67-4457-988b-ecc811d96b79.png)
