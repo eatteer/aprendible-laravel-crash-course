@@ -16,7 +16,7 @@
                href="{{route('posts.show', $post->id)}}">
                 <div class="flex justify-between mb-2">
                     <h3 class="text-xl font-bold">{{$post->title}}</h3>
-                    <time class="text-xs text-slate-700 font-bold">{{$post->created_at->format('d/m/Y')}}</time>
+                    <time class="text-xs text-slate-700 font-bold">{{$post->created_at}}</time>
                 </div>
                 <p class="text-sm line-clamp-4">{{$post->body}}</p>
             </a>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\SavePostRequest;
 use Illuminate\Http\Request;
 use App\Models\Post;
+use Illuminate\Support\Facades\DB;
 
 class PostsController extends Controller
 {
@@ -15,7 +16,7 @@ class PostsController extends Controller
 
     public function index()
     {
-        $posts = Post::get();
+        $posts = DB::table('posts')->orderByDesc('created_at')->get();
         return view('posts.index', ['posts' => $posts]);
     }
 

@@ -6,9 +6,9 @@
     @endif
     <div>
         <h1 class="title mb-2">{{$post->title}}</h1>
-        <div class="mb-4 text-sm font-medium">
-            <p>Created at {{$post->created_at->format('d/m/Y')}}</p>
-            <p>Updated at {{$post->updated_at->format('d/m/Y')}}</p>
+        <div class="mb-4 text-sm font-bold">
+            <p>Created at {{$post->created_at}}</p>
+            <p>Updated at {{$post->updated_at}}</p>
         </div>
         <p>{{$post->body}}</p>
     </div>
