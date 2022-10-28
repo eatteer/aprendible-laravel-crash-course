@@ -1,5 +1,4 @@
 <x-layouts.app title="Editing {{$post->title}}">
-    <x-back-button></x-back-button>
     <h1 class="title mb-2">Editing {{$post->title}}</h1>
     <div class="mb-4 text-sm font-medium">
         <p>Created at {{$post->created_at->format('d/m/Y')}}</p>

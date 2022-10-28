@@ -1,5 +1,4 @@
 <x-layouts.app title="{{$post->title}}">
-    <x-back-button></x-back-button>
     @if(session('postStatus'))
         <div class="alert alert-success mb-4">
             {{session('postStatus')}}

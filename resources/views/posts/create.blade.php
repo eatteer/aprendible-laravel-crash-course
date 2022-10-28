@@ -1,5 +1,4 @@
 <x-layouts.app title="Create post">
-    <x-back-button></x-back-button>
     <h1 class="title mb-4">Create post</h1>
     <form action="{{route('posts.store')}}" method="POST">
         @csrf
