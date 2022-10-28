@@ -1,9 +1,5 @@
 <x-layouts.app title="Editing {{$post->title}}">
-    <h1 class="title mb-2">Editing {{$post->title}}</h1>
-    <div class="mb-4 text-sm font-bold">
-        <p>Created at {{$post->created_at}}</p>
-        <p>Updated at {{$post->updated_at}}</p>
-    </div>
+    <h1 class="title mb-4">Editing {{$post->title}}</h1>
     <form action="{{route('posts.update', $post->id)}}" method="POST">
         @method('PATCH')
         @csrf
